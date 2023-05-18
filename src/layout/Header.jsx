@@ -13,7 +13,7 @@ const Header = () => {
     useEffect(() => {
         const changecolor = () => {
             if (window.scrollY >= 10) {
-                setColor('#D67315')
+                setColor('#0E172C')
                 setTextColor('#2a385e')
             }
             else {
@@ -47,8 +47,7 @@ const Header = () => {
                         </>
                     ))}
                     <div className='flex items-center gap-3'>
-                        <Link to='/reach-us-now' className='relative z-50 border-2 border-white px-2 p-2'>Reach Us Now</Link>
-                        <Link to='/reach-us-now' className='relative z-50 hover:bg-white hover:text-slate-500 rounded-lg px-4 p-2'>Licensing Types</Link>
+                        <Link to='/contact-us' className='relative z-50 border-2 border-white px-2 p-2 animate-pulse'>Contact Us</Link>
                     </div>
                 </div>
                 {/* mobile/ phone view mode*/}
