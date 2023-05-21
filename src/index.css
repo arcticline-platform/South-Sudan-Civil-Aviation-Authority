@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+    .clip-rectangle {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 5% 100%);
+    }
+    .banner-clip{
+      clip-path: polygon(0 0, 50% 0, 100% 100%, 0 100%);
+    }
+    .section-clip-path {
+      clip-path: polygon(50 0, 100% 0, 70% 0, 0 100%);
+    }
+    .bg-image{
+      background-image: url('./assets/images/ssdcaa.png');
+      background-repeat: no-repeat;
+      height:200px;
+      text-align: center;
+      align-items: center
+      
+    }
+  }
+@layer components{
+    .underlineLink {
+        @apply underline;
+      }
+}
