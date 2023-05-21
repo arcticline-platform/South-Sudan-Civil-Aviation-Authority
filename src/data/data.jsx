@@ -145,10 +145,22 @@ export const usefulLinks = [
         img: delta
       },
       {
-        img: bannerImage01
+        img: airplane
       },
       {
         img: delta
-      }
+      },
+      {
+        img: airplane,
+       },
+       {
+         img: delta
+       },
+       {
+         img: airplane
+       },
+       {
+         img: delta
+       }
     ],
   };

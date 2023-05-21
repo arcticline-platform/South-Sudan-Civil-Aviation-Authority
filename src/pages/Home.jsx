@@ -4,6 +4,8 @@ import TrendSection from '../components/ui/TrendSection'
 import NewsLetter from '../components/ui/NewsLetter'
 import Section01 from '../components/Section01'
 import Statistics from '../components/Statistics'
+import PartnerSection from '../components/PartnerSection'
+import UpdateSection from '../components/UpdateSection'
 
 const Home = () => {
   return (
@@ -14,9 +16,10 @@ const Home = () => {
         <Section01 />
         {/* section02 */}
         <Statistics />
-        {/* Trends seciton */}
-        {/* <TrendSection /> */}
-        {/* <NewsLetter /> */}
+        {/* Partners seciton */}
+        <PartnerSection />
+        {/* Update here */}
+        <UpdateSection />
     </div>
   )
 }

@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import logo from "../assets/images/ssdcaa.png";
 import { navLinks } from "../data/data";
 import { AiOutlineMenu, AiOutlineMenuFold } from "react-icons/ai";
+import plane from '../assets/svg/plane.svg'
+import document from '../assets/svg/document.svg'
+import services from '../assets/svg/service.svg'
+import flyingplane from '../assets/svg/fylingplane.svg'
 
 const Header = () => {
     const [color, setColor] = useState("transparent");
@@ -28,10 +31,12 @@ const Header = () => {
 
     return (
         <>
-            <div className="bg-[#114961] text-white flex md:px-4 px-2 p-2 uppercase font-bold md:text-xl text:sm" 
-                        onClick={() => setOpen(!open)}>
+            <div className="bg-[#114961] text-white flex md:px-4 px-2 p-2 uppercase font-bold md:text-lg text:xs "
+                onClick={() => setOpen(!open)}>
                 <p className="flex-1">Juba</p>
-                <p className="md:px-14">VJ46+W2M</p>
+                <a className="md:px-4" href="tel:+211912539959">+211912539959</a>
+                <a className="lowercase md:px-4 px-2" href="mailto:info@ssdcaa.net">info@ssdcaa.net</a>
+                <p className="hidden md:flex px-4">VJ46+W2M</p>
             </div>
             {/* navbar section */}
             <div className="flex items-center">
@@ -87,8 +92,20 @@ const Header = () => {
                     <div className="flex md:hidden justify-end items-end gap-10 bg-[#75b9d7] px-8 pt-4 pb-4 clip-rectangle text-[#114961] font-semibold cursor-pointer" onClick={() => setOpen(!open)}>
                         <AiOutlineMenu />
                     </div>
-                    <div className="" >
-                        <h1 className="text-white">Hello</h1>
+                    <div className="flex gap-4 items-center md:justify-center md:mt-4" >
+                        <Link to='/' className="flex flex-row items-center gap-2">
+                            <img src={plane} alt="" className="hidden md:inline w-12"/>
+                            <p className="md:text-lg text-[10px]">Flight Schedules</p>
+                        </Link>
+                        <Link to='/' className="flex flex-row items-center gap-2">
+                            <img src={document} alt="" className="hidden md:inline w-12"/>
+                            <p className="md:text-lg text-[10px]">Documents & Guidelines</p>
+                        </Link>
+                        <Link to='/' className="flex flex-row items-center gap-2 ">
+                            <img src={document} alt="" className="hidden md:inline w-12"/>
+                            <p className="md:text-lg text-[10px] ">E-Services</p>
+                        </Link>
+                    <img src={flyingplane} alt="" className="hidden md:inline pt-4 w-40"/>
                     </div>
 
                 </div>
