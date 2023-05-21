@@ -4,6 +4,7 @@ import BannerImage from '../../assets/svg/banner.svg'
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { bannerSlider } from '../../data/data';
+import { AiOutlineSearch } from 'react-icons/ai';
 
 const BannerSection = () => {
   return (
@@ -29,9 +30,11 @@ const BannerSection = () => {
 
                   <h1>Regulatory Body </h1>
                   <h1>for Aviation</h1>
-                  <div className='flex mt-4'>
-                    <input type="search" className='bg-white  w-[450px] h-16 outline-none text-slate-500 rounded-l-lg pt-2 pb-2 px-4 text-xl' />
-                    <button className='bg-[#114961] text-3xl w-[100px]   h-16 uppercase px-4 p-2 rounded-r-lg'>Now</button>
+                  <div className='flex mt-4 items-center'>
+                    <input type="search" placeholder="Search flights..." className='bg-white  w-[300px] h-16 outline-none text-slate-500 rounded-l-lg pt-2 pb-2 px-4 text-xl' />
+                    {/* <button className='bg-[#114961] text-3xl w-[100px]   h-16 uppercase px-4 p-2 rounded-r-lg'> */}
+                      <AiOutlineSearch size={20} className='text-center bg-[#114961] text-3xl w-[60px]   h-16 uppercase px-4 p-2 rounded-r-lg'/>
+                    {/* </button> */}
                   </div>
                 </div>
 

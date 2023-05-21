@@ -1,25 +1,23 @@
-import React from 'react'
-import delta from '../assets/images/delta.jpg'
-import { Splide, SplideSlide } from "@splidejs/react-splide";
-import "@splidejs/react-splide/css";
-import { truncate } from "lodash";
-import { sectiondata } from '../data/data';
-import { ClockIcon, HashtagIcon, HeartIcon } from "@heroicons/react/24/solid";
-import Carousel from 'react-elastic-carousel';
-import 'tailwindcss/tailwind.css';
+    import React from 'react'
+    import Carousel from 'react-elastic-carousel';
+    import 'tailwindcss/tailwind.css';
+    import { sectiondata } from '../data/data';
 
-
-const Section01 = () => {
-
+const UpdateSection = () => {
     const breakPoints = [
         { width: 500, itemsToShow: 1 },
-        { width: 768, itemsToShow: 3 },
+        { width: 768, itemsToShow: 2 },
         { width: 1200, itemsToShow: 4 },
     ];
 
+
     return (
-        <>
-          <div className="mx-4 bg-[#FEFBFB]">
+        <div className="mx-4 bg-[#FEFBFB]">
+            <div className='flex items-center text-[#114961] justify-center md:text-3xl text-xl font-bold  pt-4 pb-4'>
+                <div className='md:w-20 w-10 border-[#114961] border-t-4 mx-4 '></div>
+                <h1>Updates</h1>
+                <div className='md:w-20 w-10     border-[#114961] border-t-4 mx-4'></div>
+            </div>
             <Carousel breakPoints={breakPoints} itemPadding={[10, 10]} pagination={false}>
                 {sectiondata?.news.map((item, index) => (
                     <div key={index} className="flex flex-col items-center w-64 h-64">
@@ -33,8 +31,7 @@ const Section01 = () => {
                 ))}
             </Carousel>
         </div>
-        </>
     )
 }
 
-export default Section01
+export default UpdateSection
