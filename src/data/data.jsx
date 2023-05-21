@@ -1,6 +1,7 @@
 import { AiFillFacebook, AiFillYoutube, AiOutlineWhatsApp, AiOutlineMail} from 'react-icons/ai'
 import airplane from '../assets/images/aur.jpg'
 import delta from '../assets/images/delta.jpg'
+import bannerImage01 from '../assets/svg/banner.svg'
 
 export const navLinks = [
     {
@@ -112,3 +113,42 @@ export const usefulLinks = [
       body: "Delta Air Lines has reported a pre-tax loss of $15.6 billion for financial 2020, representing a loss per share of $19.49 on total revenue of $17.1 billion. In the December quarter alone, the carrier saw pre-tax losses of $1.1 billion. “Our December quarter results"
     }
   ]
+  // banner slide image
+  export const bannerSlider = [
+    {
+      image: bannerImage01,
+      title: "Break Camp",
+      and: "&",
+      subtitle: "Move Forward",
+    },
+    // {
+    //   image: airplane,
+    //   title: "Leadership",
+    //   and: "",
+    //   subtitle: "Transformation",
+    // },
+    // {
+    //   image: delta,
+    //   title: "Dance",
+    //   and: "for",
+    //   subtitle: "the Lord",
+    // },
+  ];
+
+  // section01
+  export const sectiondata = {
+    news: [
+      {
+       img: airplane,
+      },
+      {
+        img: delta
+      },
+      {
+        img: bannerImage01
+      },
+      {
+        img: delta
+      }
+    ],
+  };
