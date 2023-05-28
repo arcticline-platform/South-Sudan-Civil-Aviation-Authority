@@ -34,7 +34,7 @@ const Header = () => {
             <div className="bg-[#114961] text-white flex md:px-4 px-2 p-2 uppercase font-bold md:text-lg text:xs "
                 onClick={() => setOpen(!open)}>
                 <p className="flex-1">Juba</p>
-                <a className="md:px-4" href="tel:+211912539959">+211912539959</a>
+                <a className="md:px-4" href="tel:+21100000000">+211 0000 00000</a>
                 <a className="lowercase md:px-4 px-2" href="mailto:info@ssdcaa.net">info@ssdcaa.net</a>
                 <p className="hidden md:flex px-4">VJ46+W2M</p>
             </div>
